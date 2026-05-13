@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.profile-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    max-width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.profile-card .image {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #000;
+}
+.profile-card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #8f8f8f;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.info .name{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.info .work{
+    font-size: 16px;
+    color: #777;
+}
+.profile-card .icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.icons a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #8f8f8f;
+    color: #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    text-decoration: none;
+}
+.icons a:hover{
+    background: #b3b1b1;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.buttons .button{
+    padding: 10px 20px;
+    background: #8f8f8f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+}
