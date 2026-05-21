@@ -1,58 +1,102 @@
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-header {
-    background-color: #0D0D0D;
-    color: #EDEDED;
-    text-align: center;
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #fcf5e9;
+   min-height: 100vh;
+    width: 100%;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+header h1{
+    font-weight: bold;
+    font-size: 42px;
+    color: #d31e1e;
+}
+header button{
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    background: #d31e1e;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 11px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
 
 }
-h1{
-    color: #8C8C8C;
-}
-p {
-    color: #0D0D0D;
-}
-section.gallery {
+.main-container{
     display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #7F0008;
-    border-radius: 10px;
-    border-bottom: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-div#l1{
+.name{
+    position:absolute;
+    z-index: 1;
+    translate: 0% -45%;
+    align-items: center;
+    text-align:center;
+   
+}
+.name h1{
+    color: #d31e1e;
+    opacity: 0.5;
+    font-weight:600;
+    font-size: 235px;
+}
+.img-view img{
+    transform: rotate(-90deg);
+    position: relative;
+    z-index: 2;
+    width: 450px;
+}
+.hero .info-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    vheight: 100%;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
 }
-div#texto galeria {
+.info-section .info{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-color: #404040;
-    width: 25%;
-    height: 35%;
-    border-radius: 15%;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
 }
-div#l2{
+.info-section .specs{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
-}
-div#img galeria {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-section#engine {
-    padding: 20px;
-    background-color: #BF000C;
+    text-align: center;
+    width: 100%;
 }
